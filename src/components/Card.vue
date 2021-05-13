@@ -21,7 +21,7 @@ export default {
     props: ['name', 'icon'],
     methods: {
         claim: function () {
-            airdrop.claim(this.address).then(alert("领取完成，请在钱包中观察"))
+            airdrop.claim().then(alert("领取完成，请在钱包中观察"))
         }
     }
 }
